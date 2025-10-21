@@ -15,11 +15,11 @@ The primary goal of this section is to implement core image processing functions
 
 | Feature | Custom MATLAB Function | Description |
 | :--- | :--- | :--- |
-| **Grayscale Conversion** | `mygrayfun` | [cite_start]Converts the 3D color image matrix to a grayscale image using the weighted formula: $Gray_{channel}=0.299\times Red_{channel}+0.578\times Green_{channel}+0.114\times Blue_{channel}$[cite: 1, 16]. |
-| **Binarization** | `mybinaryfun` | [cite_start]Converts the grayscale image to a binary image using a user-defined threshold[cite: 1, 20, 22]. |
-| **Noise Reduction** | `myremovecom` | [cite_start]Removes connected components (objects) with fewer than $n$ pixels, similar to `bwareaopen`, to clean up binary noise[cite: 1, 25]. |
-| **Segmentation** | `mysegmentation` | [cite_start]Segments the cleaned binary image to isolate individual characters, similar to `bwlabel`[cite: 1, 30, 31]. |
-| **Character Recognition** | N/A | [cite_start]Performs **Decision Making** by calculating the **Correlation** between each segmented character and a provided database of English letters and numbers[cite: 1, 32, 33, 34]. |
+| **Grayscale Conversion** | `mygrayfun` | Converts the 3D color image matrix to a grayscale image using the weighted formula: $Gray_{channel}=0.299\times Red_{channel}+0.578\times Green_{channel}+0.114\times Blue_{channel}$. |
+| **Binarization** | `mybinaryfun` | Converts the grayscale image to a binary image using a user-defined threshold. |
+| **Noise Reduction** | `myremovecom` | Removes connected components (objects) with fewer than $n$ pixels, similar to `bwareaopen`, to clean up binary noise. |
+| **Segmentation** | `mysegmentation` | Segments the cleaned binary image to isolate individual characters, similar to `bwlabel`. |
+| **Character Recognition** | N/A | Performs **Decision Making** by calculating the **Correlation** between each segmented character and a provided database of English letters and number. |
 
 #### Part II: Persian License Plate Recognition 
 
@@ -39,5 +39,5 @@ This script handles the task of locating the license plate within a full image o
 ### Requirements and Running the Code
 
 * **Software:** MATLAB Environment.
-* **Files:** The repository should contain the main scripts: `pl.m`, `p2.m`, `p3.m`, and `p4.m`.
-* [cite_start]**Input:** The scripts use the `uigetfile` command to prompt the user for the input image/video file path[cite: 1, 9, 43, 45].
+* **Files:** The repository should contain the main scripts: `pl.m`, `p2.m`, `p3.m`.
+* [**Input:** The scripts use the `uigetfile` command to prompt the user for the input image/video file path.
